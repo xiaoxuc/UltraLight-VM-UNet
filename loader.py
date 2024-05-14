@@ -49,8 +49,8 @@ class isic_loader(Dataset):
         img = self.data[indx]
         seg = self.mask[indx]
         if self.train:
-            if random.random() > 0.5:
-                img, seg = self.random_rot_flip(img, seg)
+            #if random.random() > 0.5:
+            #    img, seg = self.random_rot_flip(img, seg)
             if random.random() > 0.5:
                 img, seg = self.random_rotate(img, seg)
         
